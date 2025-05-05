@@ -1,0 +1,13 @@
+[MAIN]
+disable=
+    E0307, #  __str__ does not return str
+    C0114, # missing-module-docstring
+    C0115, # missing-class-docstring
+    C0116, # missing-function-docstring
+    R0401, # complex cyclic import
+    R0903, # too-few-public-methods
+    R0801, # similar lines
+    E1101, # has no objects member
+    E1136, # unsubscriptable-object
+
+ignore-paths=.*/migrations,./manage.py

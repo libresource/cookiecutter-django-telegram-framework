@@ -1,0 +1,7 @@
+[run]
+omit =
+    {{cookiecutter.project_slug}}/prod_settings.py
+    {{cookiecutter.project_slug}}/asgi.py
+    {{cookiecutter.project_slug}}/wsgi.py
+    manage.py
+    */management/*

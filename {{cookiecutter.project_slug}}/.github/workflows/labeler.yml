@@ -1,0 +1,32 @@
+name: labeler
+
+on: [pull_request]
+
+jobs:
+  labeler:
+    permissions:
+      pull-requests: write
+      contents: read
+      issues: write
+    runs-on: ubuntu-latest
+    name: Label the PR size
+    steps:
+      - uses: codelytv/pr-size-labeler@v1
+        with:
+          {% raw %}GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}{% endraw %}
+          xs_label: 'size/xs'
+          xs_max_size: '10'
+          s_label: 'size/s'
+          s_max_size: '100'
+          m_label: 'size/m'
+          m_max_size: '500'
+          l_label: 'size/l'
+          l_max_size: '1000'
+          xl_label: 'size/xl'
+          fail_if_xl: 'true'
+          message_if_xl: >
+            Мы рекомендуем не более 1000 строк в pull request-е.
+            Пожалуйста проверьте, что вы не решаете несколько задач в одном pull request-е.
+            Этот PR может быть отклонен из за его размера.
+          github_api_url: 'https://api.github.com'
+          files_to_ignore: ''

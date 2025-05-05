@@ -1,0 +1,8 @@
+{
+  "project_name": "My Awesome Project",
+  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+  "description": "Behold My Awesome Project!",
+  "dockerhub_username": "findsimilar",
+  "dockerhub_backend_image": "{{cookiecutter.project_slug + '-backend'}}",
+  "dockerhub_nginx_image": "{{cookiecutter.project_slug + '-nginx'}}"
+}

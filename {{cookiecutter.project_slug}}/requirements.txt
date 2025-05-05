@@ -1,0 +1,6 @@
+Django==5.1.5
+pillow==11.1.0
+django-telegram-framework==2.10.0
+pyTelegramBotAPI==4.26.0
+python-dotenv==1.1.0
+psycopg2-binary==2.9.10
