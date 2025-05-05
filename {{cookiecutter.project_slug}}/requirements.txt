@@ -1,4 +1,4 @@
-Django==5.1.5
+Django==5.2
 pillow==11.1.0
 django-telegram-framework==2.10.0
 pyTelegramBotAPI==4.26.0

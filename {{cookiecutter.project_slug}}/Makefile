@@ -22,5 +22,8 @@ lint:
 	make yamllint
 	make pylint
 
+create_admin:
+	python manage.py create_admin
+
 run_bot:
 	python manage.py run_bot --settings={{cookiecutter.project_slug}}.prod_settings

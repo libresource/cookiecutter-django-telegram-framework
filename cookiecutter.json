@@ -4,5 +4,6 @@
   "description": "Behold My Awesome Project!",
   "dockerhub_username": "findsimilar",
   "dockerhub_backend_image": "{{cookiecutter.project_slug + '-backend'}}",
-  "dockerhub_nginx_image": "{{cookiecutter.project_slug + '-nginx'}}"
+  "dockerhub_nginx_image": "{{cookiecutter.project_slug + '-nginx'}}",
+  "site_production_port": 80
 }

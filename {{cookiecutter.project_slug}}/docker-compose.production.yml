@@ -36,7 +36,7 @@ services:
     restart: always
     image: {{cookiecutter.dockerhub_username}}/{{cookiecutter.dockerhub_nginx_image}}
     ports:
-      - 80:80
+      - {{cookiecutter.site_production_port}}:80
     volumes:
       - static:/etc/nginx/static/
     depends_on:
